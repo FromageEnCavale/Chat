@@ -43,10 +43,12 @@ input, textarea, select, button {
 
 :root {
     --background-light: #FFFFFF;
-    --background-dark: #333333;
+    --background-dark: #000000;
     --accent-light: #F5F5F5;
-    --accent-dark: #3D3D3D;
-    --text-light: #333333;
+    --accent-dark: #141414;
+    --button-light: #EBEBEB;
+    --button-dark: #1F1F1F;
+    --text-light: #000000;
     --text-dark: #FFFFFF;
 }
 
@@ -95,7 +97,7 @@ header {
 .deleteButton {
     padding: 10px 14px;
     border-radius: 10px;
-    background-color: var(--background);
+    background-color: var(--button);
 }
 
 .info {
@@ -218,6 +220,7 @@ ul, ol {
     :root {
         --background: var(--background-light);
         --accent: var(--accent-light);
+        --button: var(--button-light);
         --text: var(--text-light);
     }
 
@@ -228,6 +231,7 @@ ul, ol {
     :root {
         --background: var(--background-dark);
         --accent: var(--accent-dark);
+        --button: var(--button-dark);
         --text: var(--text-dark);
     }
 
