@@ -90,8 +90,7 @@ header {
     max-width: 750px;
     width: 100%;
     padding: 10px;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--accent);
+    background-color: var(--background);
 }
 
 .deleteButton {
@@ -103,7 +102,6 @@ header {
 .info {
     max-width: 65%;
     width: 265px;
-    margin: 0 14px;
     text-align: end;
     font-size: 10px;
 }
@@ -150,6 +148,8 @@ main {
 /* ----- FOOTER ----- */
 
 footer {
+    display: flex;
+    gap: 10px;
     max-width: 750px;
     width: 100%;
     padding: 10px;
@@ -158,10 +158,10 @@ footer {
 }
 
 .userInput {
-    width: 100%;
+    flex: 1;
     max-height: 200px;
     height: fit-content;
-    padding: 10px 14px;
+    padding: 10px 0 10px 14px;
     overflow-y: auto;
     scrollbar-width: none;
 }
@@ -170,6 +170,19 @@ footer {
     content: attr(data-placeholder);
     opacity: 50%;
     pointer-events: none;
+}
+
+footer > div:nth-child(2) {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+.sendButton {
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: var(--button);
 }
 
 /* ----- MARKDOWN ----- */
@@ -210,6 +223,14 @@ ul, ol {
     }
 
     .deleteButton:active {
+        opacity: 0.5;
+    }
+
+    .sendButton:hover {
+        opacity: 0.75;
+    }
+
+    .sendButton:active {
         opacity: 0.5;
     }
 

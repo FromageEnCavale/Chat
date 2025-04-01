@@ -7,6 +7,10 @@ const messagesContainer = document.getElementById('messagesContainer');
 
 const userInput = document.getElementById('userInput');
 
+const sendButton = document.getElementById('sendButton');
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 let conversationHistory = [];
 
 function parseMarkdown(text) {
@@ -147,6 +151,8 @@ userInput.addEventListener('paste', function(e) {
 
 userInput.addEventListener('keydown', (e) => {
 
+    if (isMobile) return;
+
     if (e.key === 'Enter' && !e.shiftKey) {
 
         e.preventDefault();
@@ -164,3 +170,5 @@ deleteButton.addEventListener("click", () => {
     messagesContainer.innerHTML = '';
 
 });
+
+sendButton.addEventListener('click', sendMessage);
