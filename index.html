@@ -11,13 +11,16 @@
 <body>
     <header>
         <button id="deleteButton" class="deleteButton noSelect">New chat</button>
-        <div class="info noSelect">No data are collected. Only the context is temporarily stored locally for the duration of the conversation.</div>
+        <div class="noSelect">
+            <div>No data collection.</div>
+            <div>Simple local backup for conversion time.</div>
+        </div>
     </header>
     <main id="messagesContainer"></main>
     <footer>
         <div id="userInput" class="userInput" contenteditable="true" data-placeholder="Your message..."></div>
-        <div>
-            <button id="sendButton" class="sendButton noSelect">Send</button>
+        <div class="noSelect">
+            <button id="sendButton" class="sendButton">Send</button>
         </div>
     </footer>
     <script>
