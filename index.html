@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chat with our fast AI assistant and get instant answers.">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CerebrAssist</title>
+</head>
+<body>
+    <header>
+        <button id="deleteButton" class="deleteButton noSelect" type="button">Delete chat</button>
+    </header>
+    <main>
+        <div id="messagesContainer" class="messagesContainer"></div>
+    </main>
+    <footer>
+        <div class="inputField">
+            <div id="userInput" class="userInput" contenteditable="true" data-placeholder="Your message..."></div>
+            <div class="buttonContainer">
+                <button class="sendButtonContainer" type="button">
+                    <div id="sendButton" class="sendButton noSelect">Send</div>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+<script type="module" src="scripts/script.js" defer></script>
+</html>
