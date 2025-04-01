@@ -10,20 +10,12 @@
 </head>
 <body>
     <header>
-        <button id="deleteButton" class="deleteButton noSelect" type="button">Delete chat</button>
+        <button id="deleteButton" class="deleteButton noSelect">New chat</button>
+        <div class="info noSelect">No data are collected. Only the context is temporarily stored locally for the duration of the conversation.</div>
     </header>
-    <main>
-        <div id="messagesContainer" class="messagesContainer"></div>
-    </main>
+    <main id="messagesContainer"></main>
     <footer>
-        <div class="inputField">
-            <div id="userInput" class="userInput" contenteditable="true" data-placeholder="Your message..."></div>
-            <div class="buttonContainer">
-                <button class="sendButtonContainer" type="button">
-                    <div id="sendButton" class="sendButton noSelect">Send</div>
-                </button>
-            </div>
-        </div>
+        <div id="userInput" class="userInput" contenteditable="true" data-placeholder="Your message..."></div>
     </footer>
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
