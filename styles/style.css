@@ -43,12 +43,12 @@ input, textarea, select, button {
 
 :root {
     --background-light: #FFFFFF;
-    --background-dark: #000000;
+    --background-dark: #141414;
     --accent-light: #F5F5F5;
-    --accent-dark: #141414;
+    --accent-dark: #1F1F1F;
     --button-light: #EBEBEB;
-    --button-dark: #1F1F1F;
-    --text-light: #000000;
+    --button-dark: #292929;
+    --text-light: #141414;
     --text-dark: #FFFFFF;
 }
 
@@ -98,6 +98,7 @@ header {
     padding: 10px 14px;
     border-radius: 10px;
     background-color: var(--button);
+    cursor: pointer;
 }
 
 header > div:nth-child(2) {
@@ -183,6 +184,7 @@ footer {
     padding: 10px 14px;
     border-radius: 10px;
     background-color: var(--button);
+    cursor: pointer;
 }
 
 /* ----- MARKDOWN ----- */
