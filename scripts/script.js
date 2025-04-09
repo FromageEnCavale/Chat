@@ -1,5 +1,5 @@
-import { marked } from 'https://cdn.jsdelivr.net/npm/marked@15.0.7/+esm';
-import dompurify from 'https://cdn.jsdelivr.net/npm/dompurify@3.2.4/+esm';
+import { marked } from 'https://cdn.jsdelivr.net/npm/marked@15.0.8/+esm';
+import dompurify from 'https://cdn.jsdelivr.net/npm/dompurify@3.2.5/+esm';
 
 const deleteButton = document.getElementById("deleteButton");
 

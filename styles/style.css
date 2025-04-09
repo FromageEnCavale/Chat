@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overscroll-behavior: none;
 }
 
 ul[role='list'], ol[role='list'] {
@@ -192,7 +193,7 @@ footer {
 code {
     padding: 4px;
     border-radius: 4px;
-    background-color: var(--accent);
+    background-color: var(--button);
     font-size: 14px;
 }
 
@@ -203,6 +204,7 @@ pre {
     border: 2px solid var(--accent);
     overflow-x: auto;
     scrollbar-width: none;
+    overscroll-behavior-y: auto;
     line-height: 1.4;
 }
 
@@ -213,7 +215,7 @@ pre code {
 }
 
 ul, ol {
-    padding-left: 24px;
+    padding-left: 34px;
 }
 
 /* ----- MEDIA QUERY ----- */
